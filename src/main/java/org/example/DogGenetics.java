@@ -8,7 +8,6 @@ public class DogGenetics {
 		Scanner in = new Scanner(System.in);
 		int i;
 		String dogName = "";
-		int dogSelect;
 		String [] dogBreed = {"St. Bernard","Chihuahua","Dramatic RedNosed Asian Pug","Common Cur", "King Doberman"};
 		int remaining_percent = 100;
 		// If blank, repeats the question
