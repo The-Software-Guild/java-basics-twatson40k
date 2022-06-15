@@ -24,13 +24,16 @@ public class RockPaperScissors {
             progWins = 0;
             draws = 0;
             // How many rounds should we play?
-            numRound = 0;
-            while (numRound < 1 || numRound > 10) {
+            //while (numRound < 1 || numRound > 10) {
                 System.out.print("how many rounds? ");
                 userInput = in.nextLine();
                 numRound = Integer.parseInt(userInput);
                 // doesn't allow character inputs
+            if (numRound < 1 || numRound > 10){
+                System.out.print("Number must between 1 and 10");
+                System.exit(0);
             }
+           // }
 
             //Start the rounds
             for (int i = 1; i <= numRound; i++) {
