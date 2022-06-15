@@ -1,14 +1,10 @@
 package org.example;
-import java.util.Random;
 import java.util.Scanner;
 
 public class HealthyHearts {
 
-    /*public double heartRate(double obtained) {
-        //return obtained * userAge/100;
-    }*/
     public static void main(String[] args) {
-        Random random = new Random();
+
         Scanner in = new Scanner(System.in);
         int userAge;
         System.out.println("What is Your Age? ");
