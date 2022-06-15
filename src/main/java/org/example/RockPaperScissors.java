@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class RockPaperScissors {
     public static void main(String[] args) {
-        int userWins = 0;
-        int progWins = 0;
-        int draws = 0;
-        int userSelect = 0;
-        int progSelect = 0;
+        int userWins;
+        int progWins;
+        int draws;
+        int userSelect;
+        int progSelect;
         //String userSelectStr;
         //String progSelectStr;
-        int numRound = 0;
-        char result = 'D';
+        int numRound;
+        char result;
         char contPlay = 'y';
         Random random = new Random();
         Scanner in = new Scanner(System.in);
@@ -20,7 +20,9 @@ public class RockPaperScissors {
 
         // Start the game
         while (contPlay == 'y') {
-
+            userWins = 0;
+            progWins = 0;
+            draws = 0;
             // How many rounds should we play?
             numRound = 0;
             while (numRound < 1 || numRound > 10) {
@@ -49,6 +51,8 @@ public class RockPaperScissors {
                 else if (result == 'P') progWins++;
                 else draws++;
 
+                System.out.println("score results: User: " + userWins + " Program: " + progWins + " Draws: " + draws);
+
                 /*userSelectStr = intChoice(userSelect);
                 progSelectStr = intChoice(progSelect);
                 System.out.println("result = " + result);
@@ -59,14 +63,12 @@ public class RockPaperScissors {
             }
 
             // Who has one?
-            System.out.println("score results: User: " + userWins + " Program: " + progWins + " Draws: " + draws);
+            //System.out.println("score results: User: " + userWins + " Program: " + progWins + " Draws: " + draws);
             if (userWins > progWins) {
                 System.out.println("User Wins");
             } else if (userWins < progWins) {
                 System.out.println("Program Wins");
-            } else {
-                System.out.println("It's A Draw");
-            }
+            } else {System.out.println("It's A Draw");}
 
             // continue playing?
             contPlay = 'n';
@@ -94,7 +96,7 @@ public class RockPaperScissors {
         }
         return result;
     }
-        char result = 'D';
+        //char result = 'D';
     public static char whoWins(int userSelect, int progSelect) {
         char result = 'D';
 
