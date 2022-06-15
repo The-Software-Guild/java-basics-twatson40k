@@ -11,6 +11,7 @@ public class DogGenetics {
 		int dogSelect;
 		String [] dogBreed = {"St. Bernard","Chihuahua","Dramatic RedNosed Asian Pug","Common Cur", "King Doberman"};
 		int remaining_percent = 100;
+		// If blank, repeats the question
 		while (dogName.isBlank()) {
 			System.out.println("What is your dog's name? ");
 			dogName = in.nextLine();
