@@ -1,7 +1,6 @@
 package org.example;
 // Summative Sums code
 public class SummativeSums {
-
     public static void main(String[] args) {
         // The three arrays
         int[] array1 = {1, 90, -33, -55, 67, -16, 28, -55, 15};
