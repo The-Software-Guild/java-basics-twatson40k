@@ -16,9 +16,10 @@ public class DogGenetics {
 			dogName = in.nextLine();
 
 		}
+		
 		System.out.println("Well then, I have this highly reliable report on " + dogName+
 				"'s prestigious background right here.");
-
+			// goes through the breeds and gives them a random percentage
 			for (i = 0; i < dogBreed.length; i++) {
 				if (i < dogBreed.length - 1) {
 					int percent = random.nextInt(remaining_percent);

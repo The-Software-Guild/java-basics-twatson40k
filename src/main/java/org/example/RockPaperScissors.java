@@ -38,7 +38,7 @@ public class RockPaperScissors {
             //Start the rounds
             for (int i = 1; i <= numRound; i++) {
                 userSelect = 0;
-                // Ask user for rps
+                // Ask user for rps (has to be answered in full i.e. type "rock")
                 while (userSelect == 0) {
                     System.out.print("round " + i + ") What is your move, rock, paper, or scissors. ");
                     userInput = in.nextLine();
@@ -56,14 +56,6 @@ public class RockPaperScissors {
 
                 System.out.println("score results: User: " + userWins + " Program: " + progWins + " Draws: " + draws);
 
-                /*
-                userSelectStr = intChoice(userSelect);
-                progSelectStr = intChoice(progSelect);
-                System.out.println("result = " + result);
-                System.out.println("progSelect = " + progSelect);
-                System.out.println("userSelect = " + userSelect);
-                System.out.println("number of rounds = " + numRound);
-                */
             }
 
             // Who has one?
@@ -129,7 +121,15 @@ public class RockPaperScissors {
         }
         return result;
     }
-    /*public static String intChoice(int userInt) {
+    /* code to display rock paper scissors (Unfinished)
+    userSelectStr = intChoice(userSelect);
+    progSelectStr = intChoice(progSelect);
+    System.out.println("result = " + result);
+    System.out.println("progSelect = " + progSelect);
+    System.out.println("userSelect = " + userSelect);
+    System.out.println("number of rounds = " + numRound);
+
+    public static String intChoice(int userInt) {
         //int result = 0;
         String displays = null;
         if (userInt == 1){
