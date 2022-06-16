@@ -1,6 +1,6 @@
 package org.example;
 import java.util.Scanner;
-
+//Healthy Hearts code
 public class HealthyHearts {
 
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class HealthyHearts {
         int userAge;
         System.out.println("What is Your Age? ");
         userAge = in.nextInt();
-        int maxHeartRate = 220 - userAge;
+        int maxHeartRate = 220 - userAge; // max heart rate is 220 minus the user age
         int rangeLow = (int) Math.round(maxHeartRate * 0.5);
         int rangeHigh = (int) Math.round(maxHeartRate * 0.85);
         System.out.println("Your maximum heart rate should be " + maxHeartRate + " beats per minute");

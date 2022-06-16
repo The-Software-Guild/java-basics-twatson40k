@@ -1,7 +1,7 @@
 package org.example;
 import java.util.Random;
 import java.util.Scanner;
-
+// Dog Genetics code
 public class DogGenetics {
     public static void main(String[] args) {
 		Random random = new Random();

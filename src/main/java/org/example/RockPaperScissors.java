@@ -1,7 +1,7 @@
 package org.example;
 import java.util.Random;
 import java.util.Scanner;
-
+// Rock Paper Scissors code
 public class RockPaperScissors {
     public static void main(String[] args) {
         int userWins;
@@ -56,7 +56,8 @@ public class RockPaperScissors {
 
                 System.out.println("score results: User: " + userWins + " Program: " + progWins + " Draws: " + draws);
 
-                /*userSelectStr = intChoice(userSelect);
+                /*
+                userSelectStr = intChoice(userSelect);
                 progSelectStr = intChoice(progSelect);
                 System.out.println("result = " + result);
                 System.out.println("progSelect = " + progSelect);
